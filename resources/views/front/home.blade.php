@@ -136,7 +136,7 @@
             </ul>
           </li>
 
-          <li><a class="nav-link scrollto" href="#contact-us">Contact-us</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('front.contact') }}">Contact-us</a></li>
           <li><a class="nav-link scrollto " href="{{ route('front.aboutus') }}">About us</a></li>
           <li><a class="nav-link scrollto " href="{{ route('login') }}">Admin</a></li>
           <li><a class="nav-link scrollto " href="{{ route('signup') }}">User</a></li>
@@ -178,12 +178,12 @@
 
 <h1 class="heading" id="most-viewed">MOST VIEWED</h1>
 <div id="grid2">
-          <div id="imageContainer3" class="col col3"></div>
-          <div id="imageContainer7" class="col col7"></div>
-          <div id="imageContainer1" class="col col1"></div>
-          <div id="imageContainer5" class="col col5"></div>
-          <div id="imageContainer4" class="col col4"></div>
-          <div id="imageContainer2" class="col col2"></div>
+          <div id="imageContainer7" class="col col3"></div>
+          <div id="imageContainer8" class="col col7"></div>
+          <div id="imageContainer9" class="col col1"></div>
+          <div id="imageContainer10" class="col col5"></div>
+          <div id="imageContainer11" class="col col4"></div>
+          <div id="imageContainer12" class="col col2"></div>
 
 </div>
 
@@ -192,7 +192,7 @@
     <h1 class="heading" id="watch-more">WATCH MORE</h1>
       <div class="row pb-row">
           <div id="0" class="col-md-2 pb-video">
-              <a href="{{asset('front-assets/pages/watchindex.html?webseries=0')}}">
+              <a href="{{asset('front-assets/pages/watchindex.html?webseries=1')}}">
                 <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/aotcover.jpg')}}" alt="Thumbnail 1">
               </a>
               <a class="pb-text" href="">
@@ -210,7 +210,7 @@
 
           </div>
           <div class="col-md-2 pb-video">
-              <a href="https://www.example.com/link3">
+              <a href="{{asset('front-assets/pages/watchindex.html?webseries=0')}}">
                 <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/hxhcover.jpg')}}" alt="Thumbnail 3">
               </a>
               <a class="pb-text" href="pages/aot.html">
@@ -219,28 +219,28 @@
 
           </div>
           <div class="col-md-2 pb-video">
-              <a href="">
+              <a href="{{asset('front-assets/pages/watchindex.html?webseries=5')}}">
                 <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/haikyuucover.jpg')}}" alt="Thumbnail 4">
               </a>
-              <a class="pb-text" href="">
+              <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=5')}}">
                 <label class="pb-text">Haikyuu</label>
               </a>
 
           </div>
           <div class="col-md-2 pb-video">
-            <a href="https://www.example.com/link8">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/SpiritedAwaycover.jpg')}}" alt="Thumbnail 8">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
               <label class="pb-text">Spirited Away</label>
             </a>
 
         </div>
         <div class="col-md-2 pb-video">
-          <a href="{{asset('front-assets/pages/watchindex.html?webseries=5')}}">
+          <a href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
             <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/jjkcover.jpg')}}" alt="Thumbnail 8">
           </a>
-          <a class="pb-text" href="pages/aot.html">
+          <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
             <label class="pb-text">Jujutsu Kaisen</label>
           </a>
           </div>
@@ -249,55 +249,55 @@
       </div>
       <div class="row pb-row">
         <div class="col-md-2 pb-video">
-            <a href="pages/aot.html">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=5')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/bleachcover.jpg')}}" alt="Thumbnail 1">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=5')}}">
               <label class="pb-text">Bleach</label>
             </a>
 
         </div>
         <div class="col-md-2 pb-video">
-            <a href="https://www.example.com/link1">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=1')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/tokyoghoulcover.jpg')}}" alt="Thumbnail 2">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=1')}}">
               <label class="pb-text">Tokyo Ghoul</label>
             </a>
 
         </div>
         <div class="col-md-2 pb-video">
-            <a href="https://www.example.com/link33">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=2')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/narutocover.jpg')}}" alt="Thumbnail 3">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=2')}}">
               <label class="pb-text">Naruto</label>
             </a>
 
         </div>
         <div class="col-md-2 pb-video">
-            <a href="https://www.example.com/link44">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=4')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/bluelockcover.jpg')}}" alt="Thumbnail 4">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=4')}}">
               <label class="pb-text">Blue Lock</label>
             </a>
 
         </div>
         <div class="col-md-2 pb-video">
-          <a href="https://www.example.com/link8">
+          <a href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
             <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/AoAshicover.jpg')}}" alt="Thumbnail 8">
           </a>
-          <a class="pb-text" href="pages/aot.html">
+          <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
             <label class="pb-text">Ao Ashi</label>
           </a>
 
       </div>
       <div class="col-md-2 pb-video">
-        <a href="https://www.example.com/link8">
+        <a href="{{asset('front-assets/pages/watchindex.html?webseries=4')}}">
           <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/vinlandsagacover.jpg')}}" alt="Thumbnail 8">
         </a>
-        <a class="pb-text" href="pages/aot.html">
+        <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=4')}}">
           <label class="pb-text">Vinland Saga</label>
         </a>
         </div>
@@ -306,28 +306,28 @@
     </div>
     <div class="row pb-row">
         <div class="col-md-2 pb-video">
-            <a href="pages/aot.html">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=0')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/mhacover.jpg')}}" alt="Thumbnail 1">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=0')}}">
               <label class="pb-text">My Hero Academia</label>
             </a>
 
         </div>
         <div class="col-md-2 pb-video">
-            <a href="https://www.example.com/link1">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=1')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/monstercover.jpg')}}" alt="Thumbnail 2">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=1')}}">
               <label class="pb-text">Monster</label>
             </a>
 
         </div>
         <div class="col-md-2 pb-video">
-            <a href="https://www.example.com/link33">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=2')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/yourlieinaprilcover.jpg')}}" alt="Thumbnail 3">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=2')}}">
               <label class="pb-text">Your Lie in April</label>
             </a>
 
@@ -342,19 +342,19 @@
 
         </div>
         <div class="col-md-2 pb-video">
-          <a href="https://www.example.com/link8">
+          <a href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
             <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/hellsparadisecover.jpg')}}" alt="Thumbnail 8">
           </a>
-          <a class="pb-text" href="pages/aot.html">
+          <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=3')}}">
             <label class="pb-text">Hells Paradise</label>
           </a>
 
       </div>
       <div class="col-md-2 pb-video">
-        <a href="https://www.example.com/link8">
+        <a href="{{asset('front-assets/pages/watchindex.html?webseries=4')}}">
           <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/cyberpunkcover.jpg')}}" alt="Thumbnail 8">
         </a>
-        <a class="pb-text" href="pages/aot.html">
+        <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=4')}}">
           <label class="pb-text">CyberPunk Edgerunners</label>
         </a>
         </div>
@@ -441,11 +441,11 @@
         });
         document.getElementById('imageContainer3').addEventListener('click', function() {
         // Change the URL to the desired website
-        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=2')}}";
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
         });
         document.getElementById('imageContainer4').addEventListener('click', function() {
         // Change the URL to the desired website
-        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=3')}}";
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=5')}}";
         });
         document.getElementById('imageContainer5').addEventListener('click', function() {
         // Change the URL to the desired website
@@ -454,6 +454,30 @@
         document.getElementById('imageContainer6').addEventListener('click', function() {
         // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=5')}}";
+        });
+        document.getElementById('imageContainer7').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
+        });
+        document.getElementById('imageContainer8').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
+        });
+        document.getElementById('imageContainer9').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=0')}}";
+        });
+        document.getElementById('imageContainer10').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=3')}}";
+        });
+        document.getElementById('imageContainer11').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=5')}}";
+        });
+        document.getElementById('imageContainer12').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=2')}}";
         });
         </script>
 

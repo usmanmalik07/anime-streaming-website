@@ -23,7 +23,14 @@ Route::get('/',[FrontController::class,'index'])->name('front.home');
 Route::get('/Shop',[userctrl::class,'showShop'])->name('shop');
 
 Route::get('/aboutus',[FrontController::class,'aboutus'])->name('front.aboutus');
+<<<<<<< HEAD
 
+=======
+Route::get('/contact',[FrontController::class,'contact'])->name('front.contact');
+// Route::get('/', function () {
+//     return view('login');
+// });
+>>>>>>> e780b81f383b3c317409763b1f41c39580e30b79
 Route::get('/login',[userctrl::class,'indexlogin'])->name('login');
 Route::get('/signup',[userctrl::class,'signup'])->name('signup');
 Route::get('/signin',[userctrl::class,'signin'])->name('userlogin');
@@ -54,6 +61,13 @@ Route::get('/usershop',[userctrl::class,'showuserShop'])->name('front.usershop')
 // });
 // Route::get('/checkout', [CheckoutController::class, 'showCheckout'])->name('checkout.show');
 // Route::post('/checkout', [CheckoutController::class, 'processCheckout'])->name('checkout.process');
+
+
+// ...
+
+Route::get('/contact/form', [ContactFormController::class, 'showForm'])->name('contact.form');
+Route::post('/contact/submit', [ContactFormController::class, 'submitForm']);
+
 
 
 

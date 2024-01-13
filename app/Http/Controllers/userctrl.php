@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\animenames;
 use App\Models\itemnames;
 use App\Models\Item;
+use App\Models\ContactFormResponse;
 
 class userctrl extends Controller
 
@@ -112,9 +113,6 @@ class userctrl extends Controller
                         $request->validate($rules);
 
                         $input = $request->all();
-                        // $registeruser->name = $request->input('name');
-                        // $registeruser->email = $request->input('email');
-                        // $registeruser->password = bcrypt($request->input('password'));
 
                         $registeruser->name = $request->input('name');
                         $registeruser->email = $request->input('email');
@@ -222,6 +220,26 @@ class userctrl extends Controller
         $items = Item::all();
         return view('usershop', compact('items'));
     }
+    public function showForm()
+    {
+        return view('contact.form');
+    }
+
+    public function submitForm(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'message' => 'required|string',
+        ]);
+
+        // Store the form response in the database
+        ContactFormResponse::create($validatedData);
+
+        return redirect()->route('contact.form')->with('success', 'Form submitted successfully!');
+    }
+}
+
 //     public function buyItem(Request $request, $id)
 // {
 //     // Retrieve the item based on $id
@@ -240,5 +258,5 @@ class userctrl extends Controller
 
 
 
-}
+
 

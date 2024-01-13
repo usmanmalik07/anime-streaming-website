@@ -24,6 +24,10 @@ class FrontController extends Controller
         return view('front.aboutus');
 
     }
+    public function contact(){
+        return view('front.contact');
+
+    }
 
 }
 
