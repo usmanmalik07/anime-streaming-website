@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form</title>
+    <title>Sign In Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Login Page</title>
       <!-- Vendor CSS Files -->
@@ -48,47 +48,48 @@
       </nav>
     </div>
   </header>
+<body>
 
     <div class="main">
 
-        <!-- Sign up form -->
-        <section class="signup">
+
+        <!-- Sing in  Form -->
+        <section class="sign-in">
             <div class="container1">
-                <div class="signup-content">
-                    <div class="signup-form">
-                        <h2 class="form-title text-white">Sign up</h2>
-                        <form action="/signup" method="POST" enctype="multipart/form-data" class="register-form" id="register-form" >
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="{{asset('front-assets/assets/img/signin-image.jpg')}}" alt="sing up image"></figure>
+                        <a href="{{ route('signup') }}" class="signup-image-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form action="/userlogin" method="POST" class="register-form" id="login-form" enctype="multipart/form-data">
                         @csrf
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
                             </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="password" id="password" placeholder="Password"/>
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                             </div>
-
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                             </div>
                         </form>
-                    </div>
-                    <div class="signup-image">
-                        <figure><img src="{{asset('front-assets/assets/img/signup-image.jpg')}}" alt="sing up image"></figure>
-                        <a href="{{ route('userlogin') }}" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>
         </section>
 
-
     </div>
 
-
+    <!-- JS -->
     <!-- <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script> -->
 </body>

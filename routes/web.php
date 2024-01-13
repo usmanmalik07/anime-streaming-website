@@ -23,14 +23,17 @@ Route::get('/',[FrontController::class,'index'])->name('front.home');
 Route::get('/Shop',[userctrl::class,'showShop'])->name('shop');
 
 Route::get('/aboutus',[FrontController::class,'aboutus'])->name('front.aboutus');
-// Route::get('/', function () {
-//     return view('login');
-// });
+
 Route::get('/login',[userctrl::class,'indexlogin'])->name('login');
 Route::get('/signup',[userctrl::class,'signup'])->name('signup');
+Route::get('/signin',[userctrl::class,'signin'])->name('userlogin');
+
+Route::post('/userlogin', 'App\Http\Controllers\userctrl@userlogin');
+Route::get('/usershop', 'App\Http\Controllers\userctrl@viewshop');
+
 
 Route::post('/signup', 'App\Http\Controllers\userctrl@store');
-//Route::get('/signup', 'App\Http\Controllers\userctrl@signup');
+
 Route::get('/dashboard', 'App\Http\Controllers\userctrl@viewdashboard');
 Route::get('/logout', 'App\Http\Controllers\userctrl@logout');
 Route::post('/login', 'App\Http\Controllers\userctrl@login');
