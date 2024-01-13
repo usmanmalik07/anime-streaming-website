@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Roronoa Zoro Anime Figure",
+        "price": 4000,
+        "image": "../assets/img/zoro.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Monkey D Luffy Anime Figure",
+        "price": 6500,
+        "image": "../assets/img/luffy.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Gojo Satorou Anime Figure",
+        "price": 2900,
+        "image": "../assets/img/gojo.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Yuji Itadori Anime Figure",
+        "price": 2000,
+        "image": "../assets/img/yuji.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Megumi Fushiguro Anime Figure",
+        "price": 3000,
+        "image": "../assets/img/megumi.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Naruto Uzumaki Anime Figure",
+        "price": 2000,
+        "image": "../assets/img/naurto.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Levi Ackermann Anime Figure",
+        "price": 2000,
+        "image": "../assets/img/levi.jpg"
+    },
+    {
+        "id": 8,
+        "name":" Eren Yeager Anime Figure",
+        "price": 2000,
+        "image": "../assets/img/eren.jpg"
+    }
+
+]
