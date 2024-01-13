@@ -23,6 +23,7 @@ Route::get('/',[FrontController::class,'index'])->name('front.home');
 Route::get('/Shop',[userctrl::class,'showShop'])->name('shop');
 
 Route::get('/aboutus',[FrontController::class,'aboutus'])->name('front.aboutus');
+Route::get('/contact',[FrontController::class,'contact'])->name('front.contact');
 // Route::get('/', function () {
 //     return view('login');
 // });
@@ -51,6 +52,13 @@ Route::get('/usershop',[userctrl::class,'showuserShop'])->name('front.usershop')
 // });
 // Route::get('/checkout', [CheckoutController::class, 'showCheckout'])->name('checkout.show');
 // Route::post('/checkout', [CheckoutController::class, 'processCheckout'])->name('checkout.process');
+
+
+// ...
+
+Route::get('/contact/form', [ContactFormController::class, 'showForm'])->name('contact.form');
+Route::post('/contact/submit', [ContactFormController::class, 'submitForm']);
+
 
 
 

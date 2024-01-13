@@ -163,14 +163,14 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script>
-    document.getElementById('search-input').addEventListener('input', function () {
-        const inputText = this.value.trim();
-        if (inputText !== '') {
-            fetchSuggestions(inputText);
-        } else {
-            hideSuggestions();
-        }
-    });
+        document.getElementById('search-input').addEventListener('input', function () {
+            const inputText = this.value.trim();
+            if (inputText !== '') {
+                fetchSuggestions(inputText);
+            } else {
+                hideSuggestions();
+            }
+        });
 
     function fetchSuggestions(query) {
         axios.get(`/search?q=${query}`)
