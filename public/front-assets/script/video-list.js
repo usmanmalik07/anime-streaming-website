@@ -315,6 +315,11 @@ export const allWebSeries = [
                 src: "/front-assets/assets/videos/Haikyuu (12)",
                 id: "vid_53"
              },
+             {
+                name: "Haikyuu Episode 13",
+                src: "/front-assets/assets/videos/Haikyuu (13)",
+                id: "vid_54"
+             }
         ]
     },
     // {
@@ -356,4 +361,5 @@ export const allWebSeries = [
     //                 src: "/front-assets/assets/videos/My Hero Academia 3",
     //                 id: "vid_27"
     //             }]
-    // },]
+    // },
+]
