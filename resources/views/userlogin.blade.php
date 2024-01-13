@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">Sign up</h2>
+                        <h2 class="form-title">Sign In</h2>
                         <form action="/userlogin" method="POST" class="register-form" id="login-form" enctype="multipart/form-data">
                         @csrf
                             <div class="form-group">

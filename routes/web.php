@@ -20,7 +20,14 @@ use App\Http\Controllers\AnimeController;
 Route::get('/',[FrontController::class,'index'])->name('front.home');
 Route::get('/Shop',[userctrl::class,'showShop'])->name('shop');
 Route::get('/aboutus',[FrontController::class,'aboutus'])->name('front.aboutus');
+<<<<<<< HEAD
+
+=======
 Route::get('/contact',[FrontController::class,'contact'])->name('front.contact');
+// Route::get('/', function () {
+//     return view('login');
+// });
+>>>>>>> e780b81f383b3c317409763b1f41c39580e30b79
 Route::get('/login',[userctrl::class,'indexlogin'])->name('login');
 Route::get('/signup',[userctrl::class,'signup'])->name('signup');
 Route::post('/signup', 'App\Http\Controllers\userctrl@store');
