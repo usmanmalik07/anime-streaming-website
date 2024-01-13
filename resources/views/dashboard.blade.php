@@ -61,9 +61,8 @@
   </header>
 
     <body class="sb-nav-fixed " style="padding-top: 100px">
-        <!-- notification message -->
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" style="95%">
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4" class="width: 10%">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -74,7 +73,7 @@
                 </li>
             </ul>
             <div style="position: relative; z-index: 1; width: 100%;">
-    <div style="display: flex; align-items: center; width: 100%;">
+    <div style="display: flex; align-items: center; width: 98%;">
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" style="width: 100%;">
             <div class="input-group" style="width: 100%;">
@@ -151,7 +150,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Dekho Pakistan TV</div>
+                            <div class="text-muted">Copyright &copy; GuffyLuffy</div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
