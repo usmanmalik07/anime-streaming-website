@@ -178,12 +178,12 @@
 
 <h1 class="heading" id="most-viewed">MOST VIEWED</h1>
 <div id="grid2">
-          <div id="imageContainer3" class="col col3"></div>
-          <div id="imageContainer7" class="col col7"></div>
-          <div id="imageContainer1" class="col col1"></div>
-          <div id="imageContainer5" class="col col5"></div>
-          <div id="imageContainer4" class="col col4"></div>
-          <div id="imageContainer2" class="col col2"></div>
+          <div id="imageContainer7" class="col col3"></div>
+          <div id="imageContainer8" class="col col7"></div>
+          <div id="imageContainer9" class="col col1"></div>
+          <div id="imageContainer10" class="col col5"></div>
+          <div id="imageContainer11" class="col col4"></div>
+          <div id="imageContainer12" class="col col2"></div>
 
 </div>
 
@@ -267,10 +267,10 @@
 
         </div>
         <div class="col-md-2 pb-video">
-            <a href="https://www.example.com/link33">
+            <a href="{{asset('front-assets/pages/watchindex.html?webseries=2')}}">
               <img class="pb-video-thumbnail" src="{{asset('front-assets/assets/img/narutocover.jpg')}}" alt="Thumbnail 3">
             </a>
-            <a class="pb-text" href="pages/aot.html">
+            <a class="pb-text" href="{{asset('front-assets/pages/watchindex.html?webseries=0')}}">
               <label class="pb-text">Naruto</label>
             </a>
 
@@ -452,6 +452,30 @@
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=4')}}";
         });
         document.getElementById('imageContainer6').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=5')}}";
+        });
+        document.getElementById('imageContainer7').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=0')}}";
+        });
+        document.getElementById('imageContainer8').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
+        });
+        document.getElementById('imageContainer9').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=2')}}";
+        });
+        document.getElementById('imageContainer10').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=3')}}";
+        });
+        document.getElementById('imageContainer11').addEventListener('click', function() {
+        // Change the URL to the desired website
+        window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=4')}}";
+        });
+        document.getElementById('imageContainer12').addEventListener('click', function() {
         // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=5')}}";
         });

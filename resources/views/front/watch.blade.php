@@ -13,7 +13,7 @@
 
   <!-- Template Main CSS File -->
  <link rel="stylesheet" href="{{asset('front-assets/assets/style/style.css')}}">
-    <title>videos</title>
+    <title>GuffyLuffy-Watch</title>
 </head>
 <body>
 <script src="{{asset('front-assets/script/script.js')}}"></script>
