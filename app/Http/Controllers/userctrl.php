@@ -70,12 +70,6 @@ class userctrl extends Controller
                     return
                         view('signup');
                 }
-                //userlogin
-                public function signin()
-                {
-                    return
-                        view('userlogin');
-                }
                 //Dashboard
                 public function viewdashboard()
                 {
@@ -86,16 +80,6 @@ class userctrl extends Controller
                         return redirect('login');
                     }
                 }
-                public function viewshop()
-                {
-                    if (session()->has('user_email')) {
-                        return        view('usershop');
-                    } else {
-
-                        return redirect('userlogin');
-                    }
-                }
-
 
 
                 public function store(Request $request)
@@ -119,7 +103,7 @@ class userctrl extends Controller
                         $registeruser->password = $request->input('password');
                         $registeruser->save();
 
-                        return view('userlogin');
+                        return redirect('front.shop');
                     } else return view('signup');
                 }
 
@@ -150,25 +134,6 @@ class userctrl extends Controller
         return redirect('/login');
     }
 
-    function userlogin(Request $request)
-    {
-        if ($request->isMethod('post')) {
-            $email = request('email');
-            $password = request('password');
-            $user = registeruser::where('email', $email)->where('password', $password)->get();
-            if (count($user) > 0) {
-
-
-                $request->session()->put('user_email', $user[0]->email);
-                $request->session()->put('user_name', $user[0]->name);
-
-
-                return redirect('/usersshop');
-            } else {
-                return view('userlogin');
-            }
-        } else return view('userlogin');
-    }
 
 
 
@@ -214,7 +179,6 @@ class userctrl extends Controller
         return redirect()->route('shop')->with('success', 'Item removed successfully.');
     }
 
-
     public function showuserShop()
     {
         $items = Item::all();
@@ -224,6 +188,26 @@ class userctrl extends Controller
     {
         return view('contact.form');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public function submitForm(Request $request)
     {
