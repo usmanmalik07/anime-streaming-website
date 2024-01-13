@@ -119,7 +119,7 @@ class userctrl extends Controller
                         $registeruser->password = $request->input('password');
                         $registeruser->save();
 
-                        return redirect('front.shop');
+                        return view('userlogin');
                     } else return view('signup');
                 }
 
