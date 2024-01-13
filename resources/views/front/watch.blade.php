@@ -19,14 +19,14 @@
 <script src="{{asset('front-assets/script/script.js')}}"></script>
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo"><img src="{{asset('front-assets/assets/img/logo.png')}}" alt="" class="img-fluid"></a>
-          <h1 class="logo"><a href="index.html">GuffyLuffy</a></h1>
+        <a href="{{ route('front.home') }}" class="logo"><img src="{{asset('front-assets/assets/img/logo.png')}}" alt="" class="img-fluid"></a>
+          <h1 class="logo"><a href="{{ route('front.home') }}">GuffyLuffy</a></h1>
 
           <nav id="navbar" class="navbar">
 
         <ul>
           <li><a class="nav-link scrollto active" href="{{ route('front.home') }}">Home</a></li>
-          <li><a class="nav-link scrollto" href="{{ route('shop') }}">⚡Shop⚡</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('front.usershop') }}">⚡Shop⚡</a></li>
           <li class="dropdown"><a href="#"><span>Watch</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('front.home') }}#trending">Categories</a></li>

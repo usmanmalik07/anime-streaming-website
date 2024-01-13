@@ -21,6 +21,7 @@ use App\Http\Controllers\AnimeController;
 // });
 Route::get('/',[FrontController::class,'index'])->name('front.home');
 Route::get('/Shop',[userctrl::class,'showShop'])->name('shop');
+
 Route::get('/aboutus',[FrontController::class,'aboutus'])->name('front.aboutus');
 // Route::get('/', function () {
 //     return view('login');
@@ -34,7 +35,7 @@ Route::get('/dashboard', 'App\Http\Controllers\userctrl@viewdashboard');
 Route::get('/logout', 'App\Http\Controllers\userctrl@logout');
 Route::post('/login', 'App\Http\Controllers\userctrl@login');
 // Route::get('/login', 'App\Http\Controllers\userctrl@indexlogin');
-Route::get('/dashboard', [userctrl::class, 'printName'])->name('dashboard');
+Route::get('/dashboard', [userctrl::class, 'printName'])->name('animename');
 Route::post('/add-name', [userctrl::class, 'addName'])->name('add.name');
 Route::delete('/remove-name/{id}', [userctrl::class, 'removeName'])->name('remove.name');
 Route::get('/printItem', [userctrl::class, 'printItem'])->name('print.item');
@@ -44,7 +45,12 @@ Route::get('/search', [userctrl::class, 'search'])->name("search.name");
 // Route::get('/shop', [userctrl::class, 'showShop'])->name('shop.show');
 Route::post('/shop/addShop', [userctrl::class, 'addItemShop'])->name('shop.addItemShop');
 Route::delete('/shop/remove/{id}', [userctrl::class, 'removeItemShop'])->name('shop.removeItemShop');
-
+Route::get('/usershop',[userctrl::class,'showuserShop'])->name('front.usershop');
+// Route::group(['middleware' => 'auth'], function () {
+//     Route::post('/usershop/buy/{itemId}', [ShopController::class, 'buyItem'])->name('usershop.buyItem');
+// });
+// Route::get('/checkout', [CheckoutController::class, 'showCheckout'])->name('checkout.show');
+// Route::post('/checkout', [CheckoutController::class, 'processCheckout'])->name('checkout.process');
 
 
 

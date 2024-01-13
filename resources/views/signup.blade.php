@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up Form</title>
-
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="{{asset('front-assets/assets/style/loginstyle.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Login Page</title>
       <!-- Vendor CSS Files -->
   <link href="{{asset('front-assets/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('front-assets/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
@@ -24,14 +20,14 @@
 <script src="{{asset('front-assets/script/script.js')}}"></script>
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo"><img src="{{asset('front-assets/assets/img/logo.png')}}" alt="" class="img-fluid"></a>
-          <h1 class="logo"><a href="index.html">GuffyLuffy</a></h1>
+        <a href="{{ route('front.home') }}" class="logo"><img src="{{asset('front-assets/assets/img/logo.png')}}" alt="" class="img-fluid"></a>
+          <h1 class="logo"><a href="{{ route('front.home') }}">GuffyLuffy</a></h1>
 
           <nav id="navbar" class="navbar">
 
         <ul>
           <li><a class="nav-link scrollto active" href="{{ route('front.home') }}">Home</a></li>
-          <li><a class="nav-link scrollto" href="{{ route('shop') }}">⚡Shop⚡</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('front.usershop') }}">⚡Shop⚡</a></li>
           <li class="dropdown"><a href="#"><span>Watch</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('front.home') }}#trending">Categories</a></li>
@@ -59,7 +55,7 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
+                        <h2 class="form-title text-white">Sign up</h2>
                         <form action="/signup" method="POST" enctype="multipart/form-data" class="register-form" id="register-form" >
                         @csrf
                             <div class="form-group">

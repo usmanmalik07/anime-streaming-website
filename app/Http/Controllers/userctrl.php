@@ -44,40 +44,6 @@ class userctrl extends Controller
                 return redirect()->route('dashboard')->with('success', 'Name removed successfully.');
             }
 
-
-            // Print Item
-            public function printItem()
-            {
-                $items = itemnames::all();
-                return view('printItem', ['items' => $items]); // Corrected to 'items'
-            }
-
-
-            //Add item
-            public function addItem(Request $request)
-            {
-                    $request->validate([
-                        'name' => 'required|string',
-                    ]);
-
-                    itemnames::create([
-                        'name' => $request->name,
-                    ]);
-
-                    return redirect()->route('dashboard')->with('success', 'Anime added successfully.');
-            }
-
-                // REMOVE ITEM
-
-                public function removeItem($id)
-                {
-                // Remove the name from the database based on the given $id
-                itemnames::destroy($id);
-
-                return redirect()->route('dashboard')->with('success', 'Name removed successfully.');
-                }
-
-
                 //Search
 
                 public function search(Request $request)
@@ -214,6 +180,28 @@ class userctrl extends Controller
         Item::destroy($id);
         return redirect()->route('shop')->with('success', 'Item removed successfully.');
     }
+
+
+    public function showuserShop()
+    {
+        $items = Item::all();
+        return view('usershop', compact('items'));
+    }
+//     public function buyItem(Request $request, $id)
+// {
+//     // Retrieve the item based on $id
+//     $item = Item::findOrFail($id);
+
+//     // Get the quantity from the request
+//     $quantity = $request->input('quantity', 1);
+
+//     // Calculate the total price
+//     $totalPrice = $item->price * $quantity;
+
+//     // You can perform any other logic here based on your requirements
+
+//     return redirect()->route('front.usershop')->with('success', 'Item added to cart successfully.');
+// }
 
 
 

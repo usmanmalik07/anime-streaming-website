@@ -31,14 +31,15 @@
    </head>
    <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo"><img src="{{asset('front-assets/assets/img/logo.png')}}" alt="" class="img-fluid"></a>
-          <h1 class="logo"><a href="index.html">GuffyLuffy</a></h1>
+        <a href="{{ route('front.home') }}" class="logo"><img src="{{asset('front-assets/assets/img/logo.png')}}" alt="" class="img-fluid"></a>
+          <h1 class="logo"><a href="{{ route('front.home') }}">GuffyLuffy</a></h1>
 
           <nav id="navbar" class="navbar">
 
         <ul>
           <li><a class="nav-link scrollto active" href="{{ route('front.home') }}">Home</a></li>
-          <li><a class="nav-link scrollto" href="{{ route('shop') }}">⚡Shop⚡</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('front.usershop') }}">⚡Shop⚡</a></li>
+
           <li class="dropdown"><a href="#"><span>Watch</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ route('front.home') }}#trending">Categories</a></li>
@@ -59,7 +60,7 @@
     </div>
   </header>
 
-    <body class="sb-nav-fixed">
+    <body class="sb-nav-fixed " style="padding-top: 100px">
         <!-- notification message -->
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
@@ -68,7 +69,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#" >Anime List</a></li>
-                        <li><a class="dropdown-item" href="{{route('dashboard') }}" >Items List</a></li>
+                        <li><a class="dropdown-item" href="{{route('shop') }}" >Items List</a></li>
                     </ul>
                 </li>
             </ul>
@@ -115,7 +116,7 @@
             <div id="layoutSidenav_content">
             <main class="container-fluid px-4">
 
-                    <h1>Animes</h1>
+                    <h1 class="text-white">Animes</h1>
                     <form action="{{ route('add.name') }}" method="post" class="mt-3" enctype="multipart/form-data">
                         @csrf
                         <div class="input-group">
@@ -146,46 +147,7 @@
                             </div>
                         @endforeach
                     </div>
-
-                    <h1>Items</h1>
-                    <form action="{{ route('add.Item') }}" method="post" class="mt-3" enctype="multipart/form-data">
-                        @csrf
-                        <div class="input-group">
-                            <label for="item" class="sr-only">Add Item:</label>
-                            <input type="text" id="item" name="item" class="form-control" placeholder="Add Item" required>
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-success">Add</button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="row">
-                        @foreach($items as $item)
-                            <div class="col-xl-3 col-md-6 col-sm-12"  style="padding-top: 10px;">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">
-                                        {{ $item->name }}
-                                        <form action="{{ route('remove.Item', ['id' => $item->id]) }}" method="post" class="mt-2">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Remove</button>
-                                        </form>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-
                 </main>
-
-
-
-
-
-
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
