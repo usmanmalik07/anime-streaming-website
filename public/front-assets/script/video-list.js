@@ -1,6 +1,7 @@
 
 export const allWebSeries = [
     {
+        // 0
         seriesName: "One Piece",
         episodes: [
             {
@@ -22,6 +23,7 @@ export const allWebSeries = [
         ]
     },
     {
+        // 1
         seriesName: "Attack On Titan",
         episodes: [
             {
@@ -45,6 +47,7 @@ export const allWebSeries = [
         ]
     },
     {
+        //2
         seriesName: "Naruto",
         episodes: [
             {
@@ -203,20 +206,26 @@ export const allWebSeries = [
         ]
     },
     {
+        //3
         seriesName: "Jutjutsu Kaisen",
         episodes: [
             {
                 name: "Episodes",
+                src: "#",
+                id: "vid_65"
+            },
+            {
+                name: "Jujutsu kaisen Episode 1",
                 src: "/front-assets/assets/videos/Jujutsu Kaisen 1",
                 id: "vid_35"
              },
              {
-                name: "Bleach Episode 2",
+                name: "Jujutsu kaisen Episode 2",
                 src: "/front-assets/assets/videos/Jujutsu Kaisen 2",
                 id: "vid_36"
              },
              {
-                name: "Bleach Episode 3",
+                name: "Jujutsu kaisen Episode 3",
                 src: "/front-assets/assets/videos/Jujutsu Kaisen 3",
                 id: "vid_37"
              }
@@ -224,6 +233,7 @@ export const allWebSeries = [
         ]
     },
     {
+        //4
         seriesName: "Vinland Saga",
         episodes: [
             {
@@ -247,6 +257,7 @@ export const allWebSeries = [
     },
 
     {
+        //5
         seriesName: "Haikyuu",
         episodes: [
             {
