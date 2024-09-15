@@ -432,43 +432,34 @@
 
         <script>
         document.getElementById('imageContainer1').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=0')}}";
         });
         document.getElementById('imageContainer2').addEventListener('click', function() {
-        // Change the URL to the desired website
+
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
         });
         document.getElementById('imageContainer3').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
         });
         document.getElementById('imageContainer4').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=5')}}";
         });
         document.getElementById('imageContainer5').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=4')}}";
         });
         document.getElementById('imageContainer6').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=5')}}";
         });
         document.getElementById('imageContainer7').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
         });
         document.getElementById('imageContainer8').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=1')}}";
         });
         document.getElementById('imageContainer9').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=0')}}";
         });
         document.getElementById('imageContainer10').addEventListener('click', function() {
-        // Change the URL to the desired website
         window.location.href = "{{asset('front-assets/pages/watchindex.html?webseries=3')}}";
         });
         document.getElementById('imageContainer11').addEventListener('click', function() {
