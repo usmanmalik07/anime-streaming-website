@@ -68,13 +68,21 @@ Guffyluffy is the ultimate platform for anime enthusiasts, combining anime strea
 
 
 # How to Clone and Run the Project
-1. **Install Git**: Ensure Git is installed on your system.
-2. **Clone the Repository**: Use the `git clone` command to download the project.
-3. **Set Up XAMPP**: Install XAMPP and create the necessary MySQL database.
-4. **Configure Database**: Update the `.env` file for database connection.
-5. **Install Dependencies**: Run `composer install` to get necessary PHP packages.
-6. **Run Migrations**: Execute `php artisan migrate` to set up the database schema.
-7. **Start Local Server**: Launch the local server with `php artisan serve`.
-8. **Access the Platform**: Visit `http://localhost:8000` in your browser to interact with the platform.
+1. **Install Git**:
+   - Ensure Git is installed on your system.
+2. **Clone the Repository**:
+   - Use the `git clone` command to download the project.
+3. **Set Up XAMPP**:
+   - Install XAMPP and create the necessary MySQL database.
+4. **Configure Database**:
+   - Update the `.env` file for database connection.   -    
+5. **Install Dependencies**:
+   - Run `composer install` to get necessary PHP packages.
+6. **Run Migrations**:
+   - Execute `php artisan migrate` to set up the database schema.    
+7. **Start Local Server**:
+    - Launch the local server with `php artisan serve`.
+8. **Access the Platform**:
+   - Visit `http://localhost:8000` in your browser to interact with the platform.
 
 This setup guide and readme file structure should provide clear instructions to get Guffyluffy running locally!
